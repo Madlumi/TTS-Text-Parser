@@ -98,7 +98,7 @@ int main(int argc, char *argv[]){
 	//done
 	pthread_join(t_id, NULL);
 	printf("Done\n");
-	//system("rm -f *ttsOut*");
+	system("rm -f *ttsOut*");
 	exit(0);
 	return 1;
 }
