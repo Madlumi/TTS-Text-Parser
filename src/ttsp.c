@@ -1,4 +1,3 @@
-
 #define _GNU_SOURCE
 #include <stdio.h>
 #include <pthread.h>
@@ -81,6 +80,7 @@ void speak(){
 
 }
 
+#ifndef UNIT_TESTING
 int main(int argc, char *argv[]){
 	system("rm -f *ttsOut*");
 	pthread_t t_id;
@@ -102,3 +102,4 @@ int main(int argc, char *argv[]){
 	exit(0);
 	return 1;
 }
+#endif
